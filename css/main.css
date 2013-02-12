@@ -24,6 +24,14 @@ div.wrapper {
   background-size: 100%;
 }
 
+.exampleImage {
+	background: url('../images/example.jpg');
+	float: left;
+	height: 400px;
+	width: 800px;
+	background-size: 100%;
+}
+
 header {
   border-top: 0px;
   font-size: 24px;
@@ -115,6 +123,11 @@ header {
   width: 18px;
   height: 12px;
   background-size: 100%;
+}
+
+.tab {
+	text-indent: 20px;
+	width: 90%;
 }
 
 footer a {
