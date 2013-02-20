@@ -1,0 +1,87 @@
+<!DOCTYPE HTML> 
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8">
+  <meta name="author" content="Diego Marcos" />
+  <title>ASCOT Documentation</title> 
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/main.css">
+  <style type="text/css">
+    body{
+    	background-color: #a39ac6;
+    }
+  </style>
+</head> 
+
+<body> 
+
+  <div class="wrapper"> 
+        
+    <header>
+      <div class="logo"></div>
+       <div id="mainNavigation" class="navigation">
+          <ul>
+          	<li><a href="../../index.html">Home</a></li>
+            <li><a href="../documentation.html" class="selected">Documentation</a></li>
+            <li><a href="#" class="disabledLink">About</a></li>
+            <li><a href="#" class="disabledLink">Blog</a></li>
+          <lu>
+      </div>
+      <div style="clear:both;"></div>
+    </header>
+    
+     <div id="secondaryNavigation" class="navigation secondaryNavigation">
+        <ul>
+        	<li><a href="../documentation.html">Get Started</a></li>
+          <li><a href="../install/installation.html">Installation</a></li>
+          <li><a href="dashboards.html" class="selected">Dashboards</a></li>
+          <li><a href="../gadgets/gadgets.html">Gadgets</a></li>
+          <li><a href="../api.html">Rest API</a></li>
+          <li><a href="../ascotButton.html">Ascot Button</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+        <lu>
+      </div>
+    
+    <div id="content">
+         <h2>Constructing a Dashboard</h2>
+         <p>After navigating to the ASCOT start page, dashboards can be created a few different ways. To
+         generate a dashboard using the default list of gadgets, select 'quick dashboard'. Otherwise, you can choose
+         which and how many gadgets to add to the dashboard using the 'create dashboard'. This will take you to the
+         create dashboard screen.</p>
+         <img src="createDashScreen.jpg">
+         <p>You will be presented with a list of available gadgets. Clicking on the name of a gadget will 
+         present a short description and a link to more detailed documentation about it. To pick a gadget to add to the 
+         dashboard, click the checkbox next to it. A pair of + and - arrows will appear next to the name, which allow you
+         to specify how many of that gadget to add to the dashboard. Once you are finished making you selection, click
+         'start dashboard' to be taken to the newly generated dashboard.</p>
+         <p>You can also generate dashboards by communicating with the ASCOT backend. For more information, see the 
+         <a href="../api.html">Rest API</a>.</p>
+         <h2>Data Sets</h2>
+         <p>Each dashboard keeps track of its own group of data sets. After being generated, data sets are stored on
+         the server and can be modified in different ways using <a href="../gadgets/gadgets.html">gadgets</a>.
+         To view information about all of the datasets associated with the current dashboard, click the 'data sets'
+         button to the left of the main dashboard window.</p>
+         <img src="dataSetScreen.jpg">
+         <p>The URL for each data set will take you to the JSON text for the data set. You can load your own data set
+         in JSON format by providing a URL to it in the input box at the top of the data set window and clicking 'load
+         dataset'. To disassociate a data set from the current dashboard, click the 'unload' button. Note that this does
+         not remove the data set from the server. The data set can be added back to the dashboard by providing the URL to
+         it and clicking 'load dataset' again.</p>
+         <h2>Dashboard States</h2>
+         <p>Any modifications that you make to gadgets or data sets on a dashboard are immediately saved to the server.
+         You can close your browser at any time and navigate back to a dashboard to find it in the exact same state. In
+         addition, other users can see modifications that you make to a dashboard in real time.</p>
+         <p>The undo/redo buttons above the dashboard window allow you to easily step forward and back through any changes
+         that you make. Clicking the 'fork' button will create a copy of your dashboard in its current state at a new URL,
+         which you will immediately be taken to.</p>
+         <p>Clicking the discussion tab takes you to a list of comments which users have added about your dashboard.
+         Comments are also persistent and will be copied when you fork a dashboard.</p>
+         <img src="discussionScreen.jpg">
+    </div> 
+    
+    <footer><a href="http://uw.edu" style="float: right"><span class="uwLogo"></span> University of Washington</a></footer>
+  
+  </div>
+  
+</body>
+</htmt>  
