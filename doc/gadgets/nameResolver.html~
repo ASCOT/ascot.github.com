@@ -1,0 +1,69 @@
+<!DOCTYPE HTML> 
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8">
+  <meta name="author" content="Diego Marcos" />
+  <title>ASCOT Documentation</title> 
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/main.css">
+  <style type="text/css">
+    body{
+    	background-color: #a39ac6;
+    }
+  </style>
+</head> 
+
+<body> 
+
+  <div class="wrapper"> 
+        
+    <header>
+      <div class="logo"></div>
+       <div id="mainNavigation" class="navigation">
+          <ul>
+          	<li><a href="../../index.html">Home</a></li>
+            <li><a href="../documentation.html" class="selected">Documentation</a></li>
+            <li><a href="#" class="disabledLink">About</a></li>
+            <li><a href="#" class="disabledLink">Blog</a></li>
+          <lu>
+      </div>
+      <div style="clear:both;"></div>
+    </header>
+    
+     <div id="secondaryNavigation" class="navigation secondaryNavigation">
+        <ul>
+        	<li><a href="../documentation.html">Get Started</a></li>
+          <li><a href="../install/installation.html">Installation</a></li>
+          <li><a href="../dashboards/dashboards.html">Dashboards</a></li>
+          <li><a href="gadgets.html">Gadgets</a></li>
+          <li><a href="../api.html">Rest API</a></li>
+          <li><a href="../ascotButton.html">Ascot Button</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+        <lu>
+      </div>
+    
+    <div id="content">
+       <section>
+       		<h2>Name Resolver</h2>
+         <ul>
+         	<li><a href="gadgets.html">Return to gadgets index</a></li>
+         <lu>
+        image of name resolver
+        <p>The name resolver is meant to be used in conjunction with the <a href="skyView.html">Google Sky Viewer</a>.
+        Entering the name of a celestial object or coordinate causes the sky viewer to immediately pan to that location.
+        <p>Coordinates must be entered as RA and DEC and can be in either decimal or HMS format:
+        <p>00 00 00.0 +00 00 00.0<br>
+           or<br>
+           00:00:00.0 +00:00:00.0<br>
+           or<br>
+           0.0 +0.0
+        <p>Note that the DEC must be specified with a + or - sign.
+       </section>
+    </div> 
+    
+    <footer><a href="http://uw.edu" style="float: right"><span class="uwLogo"></span> University of Washington</a></footer>
+  
+  </div>
+  
+</body>
+</htmt>  

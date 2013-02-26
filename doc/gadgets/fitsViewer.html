@@ -1,0 +1,97 @@
+<!DOCTYPE HTML> 
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8">
+  <meta name="author" content="Diego Marcos" />
+  <title>ASCOT Documentation</title> 
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/main.css">
+  <style type="text/css">
+    body{
+    	background-color: #a39ac6;
+    }
+  </style>
+</head> 
+
+<body> 
+
+  <div class="wrapper"> 
+        
+    <header>
+      <div class="logo"></div>
+       <div id="mainNavigation" class="navigation">
+          <ul>
+          	<li><a href="../../index.html">Home</a></li>
+            <li><a href="../documentation.html" class="selected">Documentation</a></li>
+            <li><a href="#" class="disabledLink">About</a></li>
+            <li><a href="#" class="disabledLink">Blog</a></li>
+          <lu>
+      </div>
+      <div style="clear:both;"></div>
+    </header>
+    
+     <div id="secondaryNavigation" class="navigation secondaryNavigation">
+        <ul>
+        	<li><a href="../documentation.html">Get Started</a></li>
+          <li><a href="../install/installation.html">Installation</a></li>
+          <li><a href="../dashboards/dashboards.html">Dashboards</a></li>
+          <li><a href="gadgets.html">Gadgets</a></li>
+          <li><a href="../api.html">Rest API</a></li>
+          <li><a href="../ascotButton.html">Ascot Button</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+        <lu>
+      </div>
+    
+    <div id="content">
+       <section>
+       		<h2>FITS Viewer</h2>
+       		<h2>Loading an Image</h2>
+       		<img src="chooseFileFits.png">
+       		<p> When the FITS viewer is first initalized, you will be presented with three options
+       		for loading an image. 
+       		<p>The choose file button allows you to load in a FITS file from your
+       		local disk. Note that files loaded from your local machine will not be saved to the dashboard
+       		state and must be loaded again if you navigate away from the dashboard.
+       		<p>There are also a set of example images stored on the server. Selecting an option from the sample
+       		dropdown menu will pull up one of these images.
+       		<p>Finally, FITS files can be loaded from a URL. The FITS viewer will remember images which are loaded
+       		from the sample set or from a URL.
+       		<p>After an image with a valid coordinate system (see <a href="https://github.com/astrojs/wcsjs">wcsjs</a>
+       		for a list of valid coordinate systems) is loaded, the gadget sends a viewport boundary notification to
+       		the dashboard. This allows gadgets like the <a href="dataInquirer.html">Data Inquirer</a> to construct a
+       		query based on the physical boundaries of the image. For more information about what types of images
+       		are supported by the FITS Viewer, see <a href="https://github.com/astrojs/fitsjs">fitsjs</a>.
+       		
+       		<h2>Panning and Scaling</h2>
+       		<img src="imageFits.png">
+       		<p>Images can be panned by selecting the 'pan' radio button and dragging across the image. Zooming is also
+       		possible with the mouse wheel.
+       		<p>The FITS viewer gadget also provides some basic scaling and stretching controls, which can be found directly 
+       		below theimage display window.
+       		
+       		<h2>Annotations</h2>
+       		<img src="annoControlsFits.png">
+       		<p>After an image is loaded, the FITS viewer gadget allows the user to highlight regions and place annotations on
+       		an image. All of the controls for creating annotations are available by selecting the 'add' radio button.
+       		<p>There are three types of annotations available: circles, rectangles, and polygons. The easiest way to create an
+       		annotation is to select the type and drag out a region on the image. For more precision, you can also define a region
+       		with a specific location and size. Note that polygonal regions cannot be created with the mouse and must be defined by
+       		entering a set of points. The 'coordinate type' field at the bottom of the control panel tells the FITS viewer to
+       		read the numbers you enter as either pixel or sky coordinates.
+       		<p>It is also possible to load a set of annotations from a dataset by selecting the 'dataset' option. After you choose
+       		a dataset from the dropdown menu and click 'import', the gadget will search the specified dataset for a 'ra' and 'dec'
+       		field. If it finds one, a small circular annotation will be placed for each point in the dataset.
+ 					<p>The 'select' option allows you to highlight annotations. If the annotations correspond to points loaded in from a
+ 					dataset, highlighting the annotations will also highlight the corresponding points in the dataset.</p>
+        	<ul>
+         		<li><a href="gadgets.html">Return to gadgets index</a></li>
+         	<lu>
+       </section>
+    </div> 
+    
+    <footer><a href="http://uw.edu" style="float: right"><span class="uwLogo"></span> University of Washington</a></footer>
+  
+  </div>
+  
+</body>
+</htmt>  

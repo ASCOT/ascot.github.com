@@ -1,0 +1,71 @@
+<!DOCTYPE HTML> 
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8">
+  <meta name="author" content="Diego Marcos" />
+  <title>ASCOT Documentation</title> 
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/main.css">
+  <style type="text/css">
+    body{
+    	background-color: #a39ac6;
+    }
+  </style>
+</head> 
+
+<body> 
+
+  <div class="wrapper"> 
+        
+    <header>
+      <div class="logo"></div>
+       <div id="mainNavigation" class="navigation">
+          <ul>
+          	<li><a href="../../index.html">Home</a></li>
+            <li><a href="../documentation.html" class="selected">Documentation</a></li>
+            <li><a href="#" class="disabledLink">About</a></li>
+            <li><a href="#" class="disabledLink">Blog</a></li>
+          <lu>
+      </div>
+      <div style="clear:both;"></div>
+    </header>
+    
+     <div id="secondaryNavigation" class="navigation secondaryNavigation">
+        <ul>
+        	<li><a href="../documentation.html">Get Started</a></li>
+          <li><a href="../install/installation.html">Installation</a></li>
+          <li><a href="../dashboards/dashboards.html">Dashboards</a></li>
+          <li><a href="gadgets.html">Gadgets</a></li>
+          <li><a href="../api.html">Rest API</a></li>
+          <li><a href="../ascotButton.html">Ascot Button</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+        <lu>
+      </div>
+    
+    <div id="content">
+       <section>
+       		<h2>Data Inquirer</h2>
+         	<img src="dataInquirer.png">
+       		<p>The data inquirer allows you to construct a data set by submitting a query to various sources. Currently,
+       		the only supported source is the SDSS catalog. After entering a name, selecting a catalog and inputting a
+       		query, the ASCOT server will submit the query and construct a dataset from the response.
+       		<h2>Constructing a Query</h2>
+       		<p>The data inquirer gadget provides some tools to help you construct a query. If another gadget, like the 
+       		<a href="skyView.html">Google Sky Viewer</a> or the <a href="fitsViewer.html">FITS Viewer</a> is active,
+       		the boundaries of the viewing window can be read by the data inquirer. If there are multiple gadgets with
+       		viewing windows active, the dropdown box below 'viewport bounds' can be used to select which boundaries to use.
+       		Clicking the 'SDSS stars' or 'SDSS galaxies' button will immediately construct a sample query to the SDSS catalog
+       		which uses those boundaries.
+       		
+       		<ul>
+         		<li><a href="gadgets.html">Return to gadgets index</a></li>
+         	<lu>
+       </section>
+    </div> 
+    
+    <footer><a href="http://uw.edu" style="float: right"><span class="uwLogo"></span> University of Washington</a></footer>
+  
+  </div>
+  
+</body>
+</htmt>  
