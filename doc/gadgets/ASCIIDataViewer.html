@@ -35,7 +35,7 @@
         	<li><a href="../documentation.html">Get Started</a></li>
           <li><a href="../install/installation.html">Installation</a></li>
           <li><a href="../dashboards/dashboards.html">Dashboards</a></li>
-          <li><a href="gadgets.html" class="selected">Gadgets</a></li>
+          <li><a href="gadgets.html">Gadgets</a></li>
           <li><a href="../api.html">Rest API</a></li>
           <li><a href="../ascotButton.html">Ascot Button</a></li>
           <li><a href="../faq.html">FAQ</a></li>
@@ -44,19 +44,21 @@
     
     <div id="content">
        <section>
-       		<h2>Gadgets</h2>
-         <ul>
-         	<li><a href="ASCIIDataViewer.html">ASCII Data Viewer</a></li>
-         	<li><a href="fitsViewer.html">FITS Viewer</a></li>
-         	<li><a href="dataInquirer.html">Data Inquirer</a></li>
-         	<li><a href="dataSetSelector.html">Data Set Selector</a></li>
-         	<li><a href="densityPlot.html">Density Plot</a></li>
-         	<li><a href="histogramView.html">Histogram View</a></li>
-         	<li><a href="nameResolver.html">Name Resolver</a></li>
-         	<li><a href="scatterPlot.html">Scatter Plot</a></li>
-         	<li><a href="skyView.html">Google Sky Viewer</a></li>
-         	<li><a href="tableView.html">Table View</a></li>
-         <lu>
+       		<h2>ASCII Data Viewer</h2>
+         	<img src="ASCIIDataViewer.png">
+       		<p>This gadget allows you to construct a dataset from a formatted text file saved to your hard drive. After
+       		choosing a name for the dataset and selecting a text file, the gadget parses the text file and creates a new
+       		dataset. The text file should be formatted such that the first line contains the column names, each separated by
+       		a space. The following lines should each represent a data point, with each attribute, also separated by a space,
+       		representing the columns specified on the first line
+       		<h2>Dataset to Text</h2>
+       		<p>Clicking on the 'Export' tab allows you to turn any dataset which is loaded to the dashboard into a formatted
+       		text file. Selecting a dataset and clicking the 'Export' button opens a new window. In this window, the column names
+       		of the dataset are listed first, with the attributes for each point listed row by row.
+       		
+       		<ul>
+         		<li><a href="gadgets.html">Return to gadgets index</a></li>
+         	<lu>
        </section>
     </div> 
     
